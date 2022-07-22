@@ -70,9 +70,9 @@ class Solution:
             rhyme_count += rhyme_amount[k]
         
         final_string =""
-        for i in range(len(alit_letters)):
-            final_string = final_string + "{letter} = {number},".format(letter = alit_letters[i], number = letter_count[i])
-        return final_string + "{rhymes} rhyming words".format(rhymes = rhyme_count)
+        for l in range(len(alit_letters)):
+            final_string = final_string + "{letter}={number},".format(letter=alit_letters[l], number=letter_count[l])
+        return final_string + "{rhymes} rhyming words".format(rhymes=rhyme_count)
 
 def main():
     string1 = input()
