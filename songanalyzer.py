@@ -35,7 +35,7 @@ class Solution:
     def song_analyze(self,lyric):
         # type lyric: string
         # return: string 
-        
+        words = lyric.split(' ')
         firstLetters = []
         alit_letters = []
         letter_count = []
@@ -46,7 +46,7 @@ class Solution:
        
 
         # TODO: Write code below to return a string with the solution to the prompt
-        words = lyric.split(' ')
+        
 
         for i in range(len(words)):
             if (words[i][0] in firstLetters):
